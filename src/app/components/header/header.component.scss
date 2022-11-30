@@ -1,0 +1,130 @@
+header {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-width: min-content;
+    position: relative;
+    background-color: transparent;
+
+    #brand {
+        display: flex;
+        height: 48px;
+        vertical-align: middle;
+        align-items: center;
+        white-space: nowrap;
+        padding-right: 30px;
+
+        .sidemenu-button {
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            padding: 12px;
+            overflow: hidden;
+            vertical-align: middle;
+
+            i {
+                color: #5f6368;
+                font-size: 24px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .logo {
+            margin-top: 12px;
+
+            img {
+                display: inline-block;
+                height: 100%;
+            }
+        }
+    }
+
+    #search{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        i{
+            font-size: 20px;
+        }
+
+        .searchbox{
+            display: flex;
+            align-items: center;
+            background-color: #eaf1fb;
+            border-radius: 8px;
+            padding: 4px 16px;
+
+            
+
+            
+            input{
+                padding: 8px;
+                outline: 0;
+                border: none;
+                background-color: #eaf1fb;
+                width: 400px;
+            }
+
+            button {
+                padding: 8px; 
+                border-radius: 50%;
+                background-color: transparent;
+            }
+        }
+
+        .other-settings {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .active-status{
+                display: flex;
+                gap: 12px;
+                align-items: center;
+                padding: 8px 16px;
+                border-radius: 16px;
+                color: #444746;
+                font-weight: 700;
+                background-color: transparent;
+                border: 1px solid #dadce0;
+
+                span{
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: green;
+                }
+
+                i{
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+
+    #user {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding:0 16px;
+
+        i{
+            font-size: 20px;
+            color: #5f6368;
+        }
+
+        .avatar{
+            img {
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+}
