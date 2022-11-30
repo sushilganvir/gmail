@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gmail';
+
+  submenu:boolean = false;
+
+  toggle(){
+    this.submenu = !this.submenu
+  }
 }
