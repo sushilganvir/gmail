@@ -1,0 +1,19 @@
+<div class="email-card" routerLink="details/{{mail.id}}" *ngFor="let mail of data">
+  <div class="options">
+    <div>
+      <input type="checkbox" />
+    </div>
+
+    <div>
+      <span class="material-symbols-outlined"> star </span>
+    </div>
+    <div>{{mail.sent}}</div>
+  </div>
+
+  <div class="content">{{mail.content}}</div>
+
+  <div>
+    <div class="email-date">{{mail.date}}</div>
+    <div></div>
+  </div>
+</div>

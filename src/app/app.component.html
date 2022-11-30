@@ -1,3 +1,85 @@
 <app-header></app-header>
-<section>
+<section id="main">
+  <!-- side navigation -->
+  <div id="sidenav">
+    <div class="sidenav-item">
+      <span class="material-symbols-outlined"> mail </span>
+      <span class="icon-title">Mail</span>
+    </div>
+    <div class="sidenav-item">
+      <span class="material-symbols-outlined"> mark_chat_unread </span>
+      <span class="icon-title">Chat</span>
+    </div>
+    <div class="sidenav-item">
+      <span class="material-symbols-outlined"> groups </span>
+      <span class="icon-title">Spaces</span>
+    </div>
+    <div class="sidenav-item">
+      <span class="material-symbols-outlined"> videocam </span>
+      <span class="icon-title">Meet</span>
+    </div>
+  </div>
+
+  <!-- mail section -->
+  <div id="mailbox">
+    <div class="compose-button">
+      <span class="material-symbols-outlined"> edit </span> Compose
+    </div>
+
+    <div class="mailbox-sections">
+      <div class="mailbox-item">
+        <span class="material-symbols-outlined"> inbox </span> Inbox
+      </div>
+
+      <div class="mailbox-item">
+        <span class="material-symbols-outlined"> star </span> Starred
+      </div>
+
+      <div class="mailbox-item">
+        <span class="material-symbols-outlined"> timer </span> Snoozed
+      </div>
+
+      <div class="mailbox-item">
+        <span class="material-symbols-outlined"> send </span> Sent
+      </div>
+
+      <div class="mailbox-item">
+        <span class="material-symbols-outlined"> draft </span> Drafts
+      </div>
+    </div>
+  </div>
+
+  <!-- email list -->
+  <div id="email-list">
+    <!-- email list header section -->
+    <div class="email-list-header">
+      <div class="email-list-header-submenu">
+        <div class="select">
+          <input type="checkbox" />
+          <span class="material-symbols-outlined"> arrow_drop_down </span>
+        </div>
+
+        <div>
+          <span class="material-symbols-outlined"> refresh </span>
+        </div>
+        <div>
+          <span class="material-symbols-outlined"> more_vert </span>
+        </div>
+      </div>
+
+      <div class="email-list-header-submenu">
+        <div>1-50 of 64</div>
+        <div><span class="material-symbols-outlined"> chevron_left </span></div>
+        <div>
+          <span class="material-symbols-outlined"> chevron_right </span>
+        </div>
+      </div>
+    </div>
+  
+  <div>
+    <router-outlet>
+    </router-outlet>
+  </div>
+  
+  </div>
 </section>
