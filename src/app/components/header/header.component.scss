@@ -1,5 +1,4 @@
 header {
-    padding: 8px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -7,34 +6,38 @@ header {
     position: relative;
     background-color: transparent;
 
+    .sidemenu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 27px;
+        overflow: hidden;
+        vertical-align: middle;
+        background-color: #eaf1fb;
+
+        i {
+            color: #5f6368;
+            font-size: 24px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
     #brand {
         display: flex;
         height: 48px;
         vertical-align: middle;
         align-items: center;
         white-space: nowrap;
-        padding-right: 30px;
+        padding: 8px 30px;
+        width: 256px;
 
-        .sidemenu-button {
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-            padding: 12px;
-            overflow: hidden;
-            vertical-align: middle;
-
-            i {
-                color: #5f6368;
-                font-size: 24px;
-                width: 24px;
-                height: 24px;
-            }
-        }
+        
 
         .logo {
-            margin-top: 12px;
+            padding-top: 26px;
+            vertical-align: middle;
+            
 
             img {
                 display: inline-block;
@@ -48,10 +51,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        i{
-            font-size: 20px;
-        }
+        padding: 8px 20px;
 
         .searchbox{
             display: flex;

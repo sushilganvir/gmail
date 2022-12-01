@@ -3,8 +3,9 @@
 }
 
 #sidenav {
-  padding: 8px 12px;
-  width: 60px;
+  padding: 8px 16px;
+  font-weight: 500;
+  
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,7 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 12px 20px;
+    padding: 12px 0px;
 
     .material-symbols-outlined {
       color: #444746;
@@ -30,6 +31,7 @@
 
 #mailbox {
   padding: 12px;
+  width: 256px;
 
   .compose-button {
     display: flex;
@@ -38,6 +40,7 @@
     padding: 16px 20px;
     background-color: #c2e7ff;
     border-radius: 20px;
+    width: fit-content;
   }
 
   .compose-button:hover {
@@ -58,6 +61,7 @@
       border-radius: 16px;
       font-size: 0.87rem;
       letter-spacing: normal;
+      font-weight: 500;
 
       span {
         padding-right: 12px;
