@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  submenu:boolean = false;
+
+  toggle(){
+    this.submenu = !this.submenu
+  }
+
 }

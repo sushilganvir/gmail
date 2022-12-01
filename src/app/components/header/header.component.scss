@@ -82,6 +82,7 @@ header {
             display: flex;
             align-items: center;
             gap: 20px;
+            position: relative;
 
             .active-status{
                 display: flex;
@@ -93,6 +94,7 @@ header {
                 font-weight: 700;
                 background-color: transparent;
                 border: 1px solid #dadce0;
+               
 
                 span{
                     width: 12px;
@@ -103,6 +105,19 @@ header {
 
                 i{
                     font-size: 8px;
+                }
+
+                .change-status {
+                    position: absolute;                    
+                    z-index: 50;
+                    top: 110%;
+                    left: 0;
+                    padding: 16px;
+                    background-color: white;
+                    width: 100%;
+                    text-align: left;
+                    border-radius: 8px;
+                    box-shadow: rgb(0 0 0 / 30%) 0px 4px 16px;
                 }
             }
         }

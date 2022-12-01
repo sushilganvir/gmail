@@ -20,7 +20,14 @@
         </div>
 
         <div class="other-settings">
-            <button class="active-status"><span></span> Active <i class="bi bi-caret-down-fill"></i></button>
+            <button class="active-status" (click)="toggle()"><span></span> Active <i class="bi bi-caret-down-fill"></i>
+            
+                <div class="change-status" *ngIf="submenu">
+                    <div>active</div>
+                    <div>deact</div>
+                </div>
+            
+            </button>
             <div class="support"><i class="bi bi-question-circle"></i></div>
             <div class="setting"><i class="bi bi-gear"></i></div>
         </div>
