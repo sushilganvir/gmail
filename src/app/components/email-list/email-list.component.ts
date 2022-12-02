@@ -4,7 +4,7 @@ import { MailsService } from 'src/app/mails.service';
 @Component({
   selector: 'app-email-list',
   templateUrl: './email-list.component.html',
-  styleUrls: ['./email-list.component.scss']
+  styleUrls: ['./email-list.component.scss', './mob-email-list.component.scss']
 })
 export class EmailListComponent {
 
