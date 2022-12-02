@@ -1,12 +1,17 @@
-.email-card {
-    color: #616161;
-    padding: 12px 4px;
+@media only screen and (max-width: 300px) {
 
-    .options {
-        display: none;
+    .email-card {
+        color: #616161;
+        padding: 12px 4px;
+    
+        .options {
+            display: none;
+        }
+    
+        .content {
+            font-size: 12px;
+          }
     }
 
-    .content {
-        font-size: 12px;
-      }
 }
+
