@@ -1,7 +1,57 @@
 @media only screen and (max-width: 300px) {
-    header {
-        #brand{
-            display: none;
-        }
+  header {
+    .sidemenu-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 16px;
+      overflow: hidden;
+      vertical-align: middle;
+      background-color: transparent;
+
+      i {
+        color: #5f6368;
+        font-size: 16px;
+      }
     }
+
+    #brand {
+      display: none;
+    }
+
+    #search {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 8px;
+
+      .searchbox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        padding: 4px 8px;
+
+        input {
+          padding: 4px;
+          outline: 0;
+          border: none;
+          background-color: #eaf1fb;
+          width: 100%;
+        }
+
+        button {
+          display: none;
+          padding: 8px;
+          border-radius: 50%;
+          background-color: transparent;
+        }
+      }
+
+      .other-settings {
+        display: none;
+      }
+    }
+   
+  }
 }
