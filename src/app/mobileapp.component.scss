@@ -1,0 +1,51 @@
+#main {
+    display: block;
+}
+
+#sidenav {
+    position: fixed;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    padding: 4px 16px;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+    .sidenav-item{
+       
+
+        .material-symbols-outlined {
+            font-size: 20px;
+          }
+
+          .icon-title {
+            font-size: 0.6rem;
+            font-weight: 500;
+            color: #444746;
+          }
+                
+    }
+
+    
+}
+
+#mailbox {
+    display: none;
+}
+
+#email-list {
+
+    .email-list-header{
+        font-size: 12px;
+        color: #616161;
+
+        span {
+            font-size: 16px;
+        }
+
+        .email-list-header-submenu:first-child{
+            display: none;
+        }
+    }
+}
