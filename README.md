@@ -8,3 +8,4 @@ Project Overview
 - Plain SCSS used for styling components
 - collapsible menu added to categories and active button
 - Google officaly use Google Sans Fonts for gmail however its CDN not available on google font website so I have used Open Sans fonts.
+- Application optimized for media screen (max-width : 300px)
