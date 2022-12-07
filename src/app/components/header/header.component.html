@@ -1,58 +1,124 @@
 <header>
-    <div class="sidemenu-button">
-        <i class="bi bi-list"></i>
+  <div class="sidemenu-button">
+    <i class="bi bi-list"></i>
+  </div>
+
+  <!-- branding -->
+  <div id="brand">
+    <div class="logo">
+      <img src="../../../assets/images/gmail logo.png" alt="" srcset="" />
+    </div>
+  </div>
+
+  <!-- search bar -->
+  <div id="search">
+    <div class="searchbox">
+      <button><span class="material-symbols-outlined"> search </span></button>
+      <input type="text" placeholder="Search in mail" />
+      <!-- <button><i class="bi bi-x"></i></button> -->
+      <button><span class="material-symbols-outlined"> tune </span></button>
     </div>
 
-    <!-- branding -->
-    <div id="brand">        
-        <div class="logo" >
-            <img src="../../../assets/images/gmail logo.png" alt="" srcset="">
+    <div class="other-settings">
+      <button class="active-status" (click)="toggle()">
+        <span class="active"></span> Active
+        <i class="bi bi-caret-down-fill"></i>
+
+        <div class="change-status" *ngIf="submenu">
+          <div class="activity-group">
+            <div class="activity-card">
+              <div class="status-icon">
+                <span class="bullet">&bull;</span>
+            </div>
+
+              <div class="status-name">
+                <p>Automatic</p>
+                <span>Based on activity</span>
+              </div>
+
+              <div></div>
+            </div>
+
+            <div class="activity-card">
+              <div class="status-icon">
+                <span class="material-symbols-outlined">
+                  do_not_disturb_on
+                </span>
+              </div>
+
+              <div class="status-name">
+                <p>Do not distrub</p>
+                <span>Mute chat notifications</span>
+              </div>
+
+              <div></div>
+            </div>
+
+            <div class="activity-card">
+              <div class="status-icon">
+                <span class="material-symbols-outlined">
+                  radio_button_unchecked
+                </span>
+              </div>
+
+              <div class="status-name">
+                <p>Set as away</p>
+              </div>
+
+              <div></div>
+            </div>
+          </div>
+
+          <div class="add-status">
+            <div class="activity-card">
+              <div class="status-icon">
+                <span class="material-symbols-outlined"> edit </span>
+              </div>
+
+              <div class="status-name">
+                <p>Add a status</p>
+              </div>
+
+              <div></div>
+            </div>
+          </div>
+
+          <div class="notification-setting">
+            <div class="activity-card">
+              <div class="status-icon" style="visibility: hidden;">                
+              </div>
+
+              <div class="status-name">
+                <p>Chat notification setting</p>
+              </div>
+
+              <div></div>
+            </div>
+          </div>
         </div>
+      </button>
+      <div class="support">
+        <span class="material-symbols-outlined"> help </span>
+      </div>
+      <div class="setting">
+        <span class="material-symbols-outlined"> settings </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- user profile -->
+  <div id="user">
+    <div class="apps">
+      <a href="#"><span class="material-symbols-outlined"> apps </span></a>
     </div>
 
-    <!-- search bar -->
-    <div id="search">
-        <div class="searchbox">
-            <button><span class="material-symbols-outlined">
-                search
-                </span></button>
-            <input type="text" placeholder="Search in mail" />
-            <!-- <button><i class="bi bi-x"></i></button> -->
-            <button><span class="material-symbols-outlined">
-                tune
-                </span></button>
-        </div>
-
-        <div class="other-settings">
-            <button class="active-status" (click)="toggle()"><span></span> Active <i class="bi bi-caret-down-fill"></i>
-            
-                <div class="change-status" *ngIf="submenu">
-                    <div>active</div>
-                    <div>deact</div>
-                </div>
-            
-            </button>
-            <div class="support"><span class="material-symbols-outlined">
-                help
-                </span></div>
-            <div class="setting"><span class="material-symbols-outlined">
-                settings
-                </span></div>
-        </div>
+    <div class="avatar">
+      <a href="#">
+        <img
+          src="https://www.w3schools.com/howto/img_avatar.png"
+          alt="avatar"
+        />
+      </a>
     </div>
-
-    <!-- user profile -->
-    <div id="user">
-        <div class="apps">
-            <a href="#"><span class="material-symbols-outlined">
-                apps
-                </span></a>
-        </div>
-
-        <div class="avatar">
-            <a href="#">
-                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="avatar" />
-            </a>
-        </div>
-    </div>
+  </div>
 </header>
