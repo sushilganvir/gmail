@@ -82,12 +82,43 @@
   width: 100%;
   padding: 0 16px;
 
+  .filter-options {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    
+    
+
+    .filter {
+      display: inline-block;
+      border: 1px solid #747775 ;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 500;
+      border-radius: 8px;
+      padding: 4px 16px;
+      color: #444746;
+
+      span{
+        vertical-align: middle;
+      }
+      
+    }
+
+    .filter:last-child {
+      border: none;
+      color: #0b57d0;
+      font-weight: 500;
+    }
+  }
+
   .email-list-header {
     display: flex;
     justify-content: space-between;
     background-color: white;
     padding: 8px 16px;
-    border-radius: 20px 20px 0 0;
+    
 
     .email-list-header-submenu {
       display: flex;
